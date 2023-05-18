@@ -11,7 +11,7 @@ console.log(returnTrue(21,50));
 
 
 
-// 02 Write a #JavaScript program to determine whether a given year is a leap year ?
+// 02 Write a  #JavaScript program to determine whether a given year is a leap year ?
 
 let givenYear = 2023;
 let givenYear2 = 2024;
