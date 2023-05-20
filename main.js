@@ -531,6 +531,32 @@ console.log(simpleCalc(2,"*",6))
 // // 108  Write a #JavaScript Program to Check if a Number is a Float or Integer.
 // // 109 : Write a #JavaScript Program to Pass a Function as Parameter.
 // // 110 : Write a #JavaScript Program to Get the Dimensions of an Image
-// // 111  Write a #JavaScript Program to Remove All Whitespaces From a Text.
+// // 111  Write a #JavaScript Program to Remove All Whitespaces From a Text
+
+// //  112   Write a #JavaScript Program to find factorial recursevly
+// 5! => 5*4*3*2*1
+
+function factorial(num){
+    if(num == 1 ) {
+        return 1
+    }
+    return num * factorial(num -1)   
+}
+console.log(factorial(5));
+
+
+// //  113   Write a #JavaScript Program to find  fibonacci series recursiuly
+
+function fibonacci(num){
+    if(num ===1){
+        return [0,1]
+    }
+    let result = fibonacci(num-1)
+   result.push(result[result.length-1] + result[result.length-2])
+   return result
+    
+}
+console.log(fibonacci(7));
+.
 
 
