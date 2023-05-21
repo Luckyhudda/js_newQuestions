@@ -559,4 +559,57 @@ function fibonacci(num){
 console.log(fibonacci(7));
 .
 
+//  114  Find Index of targeted Element recursivly
+let array = [1,2,3,1,5,1,2]
+ let target = 1;
+// // Output 5
+
+function findIndexFromZero(arr,target,startIndex){
+        if(target === arr[startIndex]){
+            return startIndex
+        }
+       return findIndexFromZero(arr,target,startIndex-1)
+}
+
+function findIndex(arr, target){
+    return findIndexFromZero(arr, target, arr.length-1)
+}
+console.log(findIndex(array, target));
+
+
+//  115 plue  one at the end in array
+// Input [1,3,4]
+// Output [1,3,5]
+
+
+var plusOne = function(digits) {
+    if(digits[0] === 9){
+        digits.unshift(0)
+   }
+    if(digits[0] ===9){
+       
+        if(digits[0] ===9){
+            digits = [1,0]
+        }
+        else digits[0] = digits[0] + 1
+   }
+    else{
+        digits[digits.length-1] += 1 
+   for(let i = digits.length-1; i>=0;i--){
+       if(digits[i] >=10){
+           digits[i] = digits[i] % 10
+           digits[i-1] += Math.floor(digits[i]/10) + 1
+       }
+   }
+    }
+    if(digits[0] ===0){
+        digits.shift(0)
+    }
+   return digits
+};
+console.log(plusOne([1,2,7]));
+console.log(plusOne([9,9,8]));
+
+
+
 
