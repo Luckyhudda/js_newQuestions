@@ -640,5 +640,23 @@ var isThree = function (n) {
 };
 console.log(isThree(n));
 
+// 117 Find Greatest Common Divisor of Array
+
+let nums = [2, 5, 6, 9, 10];
+
+
+var findGCD = function (nums) {
+   let min = Math.min(...nums);
+   let max = Math.max(...nums);
+   for(let i = max; i>=1;i--){
+      if((min % i != 0) || (max % i != 0)){
+         continue;
+      }
+       return i;
+   }
+  
+};
+console.log(findGCD(nums));
+
 
 
